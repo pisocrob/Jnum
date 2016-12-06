@@ -10,7 +10,6 @@ def parsetoJNumeric(euroNum):
     jNum = ''
     i = 0;
     num = int(euroNum)
-    num = euroNum
     while (num != 0):
         digit = num % 10
         num = num / 10
@@ -31,7 +30,7 @@ def genRandomJNums(r):
 r = raw_input("Number: ")
 if r.find(",") == -1:
     if r.find("rand") > -1:
-        genRandom(r)
+        genRandomJNums(r)
     else:
         print parsetoJNumeric(r)
 
